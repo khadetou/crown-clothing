@@ -1,14 +1,13 @@
 
 interface MenueItemProps {
     title: string;
-    subtitle: string;
 }
-const MenueItem: React.FC<MenueItemProps> = ({ title, subtitle }) => {
+const MenueItem: React.FC<MenueItemProps> = ({ title }) => {
     return (
         <div className="menu-item">
             <div className="content">
                 <div className="title">{title}
-                    <div className="subtitle">{subtitle}</div>
+                    <div className="subtitle">SHOP NOW</div>
                 </div>
             </div>
         </div>
