@@ -4,7 +4,12 @@ const Directory = () => {
     return (
         <div className="directory-menu">
             {List.map((item) => (
-                <MenueItem key={item.id} title={item.title} />
+                <MenueItem
+                    key={item.id}
+                    title={item.title}
+                    imageUrl={item.imageUrl}
+                    size={item.size}
+                />
             ))}
         </div>
     )
