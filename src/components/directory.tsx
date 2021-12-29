@@ -1,14 +1,15 @@
 import MenueItem from "./menu-item/menue-item";
 import { List } from "./menu-item/menue-item-list";
+
+
 const Directory = () => {
+
     return (
         <div className="directory-menu">
-            {List.map((item) => (
+            {List.map(({ id, ...list }) => (
                 <MenueItem
-                    key={item.id}
-                    title={item.title}
-                    imageUrl={item.imageUrl}
-                    size={item.size}
+                    key={id}
+                    {...list}
                 />
             ))}
         </div>
