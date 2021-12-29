@@ -1,11 +1,10 @@
 
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
+import Homepage from './pages/homepage/Homepage';
+const App: React.FC = () => {
   return (
     <div >
-      <h1>Hello world!</h1>
+      <Homepage />
     </div>
   );
 }
